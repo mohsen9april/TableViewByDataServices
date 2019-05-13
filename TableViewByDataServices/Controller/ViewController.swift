@@ -8,6 +8,8 @@
 
 import UIKit
 
+var myIndex: Int = 0
+
 class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var myTableView: UITableView!
@@ -36,6 +38,13 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = obj.List[indexPath.row]
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
     
 
 }

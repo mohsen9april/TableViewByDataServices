@@ -13,8 +13,8 @@
 		EDA46D122280CCD700BF772A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA46D112280CCD700BF772A /* Assets.xcassets */; };
 		EDA46D152280CCD700BF772A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA46D132280CCD700BF772A /* LaunchScreen.storyboard */; };
 		EDA46D1D2280CE4700BF772A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA46D1C2280CE4700BF772A /* TableViewCell.swift */; };
-		EDA46D212280D0F600BF772A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA46D202280D0F600BF772A /* Category.swift */; };
-		EDA46D232280D1F300BF772A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA46D222280D1F300BF772A /* DataService.swift */; };
+		EDA46D212280D0F600BF772A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA46D202280D0F600BF772A /* Task.swift */; };
+		EDA46D232280D1F300BF772A /* DataServiceForTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA46D222280D1F300BF772A /* DataServiceForTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		EDA46D142280CCD700BF772A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA46D162280CCD700BF772A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA46D1C2280CE4700BF772A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		EDA46D202280D0F600BF772A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		EDA46D222280D1F300BF772A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		EDA46D202280D0F600BF772A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EDA46D222280D1F300BF772A /* DataServiceForTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceForTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 		EDA46D1E2280D0A700BF772A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EDA46D202280D0F600BF772A /* Category.swift */,
-				EDA46D222280D1F300BF772A /* DataService.swift */,
+				EDA46D202280D0F600BF772A /* Task.swift */,
+				EDA46D222280D1F300BF772A /* DataServiceForTableView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,8 +83,8 @@
 		EDA46D1F2280D0B800BF772A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EDA46D1C2280CE4700BF772A /* TableViewCell.swift */,
 				EDA46D0C2280CCD700BF772A /* ViewController.swift */,
+				EDA46D1C2280CE4700BF772A /* TableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,8 +163,8 @@
 				EDA46D1D2280CE4700BF772A /* TableViewCell.swift in Sources */,
 				EDA46D0D2280CCD700BF772A /* ViewController.swift in Sources */,
 				EDA46D0B2280CCD700BF772A /* AppDelegate.swift in Sources */,
-				EDA46D212280D0F600BF772A /* Category.swift in Sources */,
-				EDA46D232280D1F300BF772A /* DataService.swift in Sources */,
+				EDA46D212280D0F600BF772A /* Task.swift in Sources */,
+				EDA46D232280D1F300BF772A /* DataServiceForTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-
     @IBOutlet weak var myTableView: UITableView!
     
-
+    var obj = DataServiceForTableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,13 +23,13 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instance.getCategories().count
+        return obj.List.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableViewCell
-        cell?.myLabel.text = DataService.instance.getCategories()[indexPath.row].title
-        cell?.myImage.image = UIImage(named: DataService.instance.getCategories()[indexPath.row].imageName)
+        cell?.myLabel.text = obj.List[indexPath.row].title
+        cell?.myImage.image = UIImage(named: obj.List[indexPath.row].imageName)
         return cell!
     }
     
